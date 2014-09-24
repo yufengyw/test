@@ -1,0 +1,41 @@
+<div class="container">
+		<div class="row header"><h4 class="hide" id="message"></h4></div>
+		<div id="userform">
+			<div class="row form-group">
+				<div class="col-md-1 col-md-offset-4">
+					<label class="pull-right">username</label>
+				</div>
+				<div class="col-md-2">
+					<input type="text" class="form-control " placeholder="username" id="username" name="username"value="<%=user.username%>" >
+				</div>
+				<div class="col-md-4 hide ">should contain number and characters</div>
+			</div>
+			<div class="row form-group">
+				<div class="col-md-1 col-md-offset-4">
+					<label class="pull-right">password</label>
+				</div>
+				<div class="col-md-2">
+					<input type="text" class="form-control" placeholder="password" id="password" name="password" >
+				</div>
+				<div class="col-md-4 hide">should contain number and
+					characters</div>
+			</div>
+			<div class="row form-group">
+				<div class="col-md-1 col-md-offset-4">
+					<label class="pull-right">role</label>
+				</div>
+				<div class="col-md-2">
+					<input type="text" class="form-control" placeholder="role" id="role" name="role">
+				</div>
+				<div class="col-md-4 hide" >enter ROLE_USER OR ROLE_ADMIN</div>
+			</div>
+			<div class="row">
+				<div class="col-md-1 col-md-offset-4"></div>
+				<div class="col-md-2">
+					<button class="btn btn-primary" id="submitUserForm">submit</button>
+					<button class="btn">cancel</button>
+				</div>
+			</div>
+		</div>
+
+	</div>

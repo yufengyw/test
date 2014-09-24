@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link type="text/css" rel="stylesheet" href="../resources/css/style.css" />
+<link type="text/css" rel="stylesheet"
+	href="../resources/js/bootstrap-3.2/css/bootstrap.min.css" />
+<style>
+body {
+	height: 768px
+}
+
+.show-grid {
+	margin-top: 15px;
+}
+
+.show-grid [class^="col-"] {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: #eee;
+	border: 1px solid #ddd;
+}
+
+.header {
+	height: 150px;
+}
+
+</style>
+
+
+<title>add user</title>
+</head>
+<body>
+
+	<div class="container">
+		<div class="row header"><h4 class="hide" id="message"></h4></div>
+		<div id="userform">
+			<div class="row form-group">
+				<div class="col-md-1 col-md-offset-4">
+					<label class="pull-right">username</label>
+				</div>
+				<div class="col-md-2">
+					<input type="text" class="form-control " placeholder="username" id="username" name="username">
+				</div>
+				<div class="col-md-4 hide ">should contain number and characters</div>
+			</div>
+			<div class="row form-group">
+				<div class="col-md-1 col-md-offset-4">
+					<label class="pull-right">password</label>
+				</div>
+				<div class="col-md-2">
+					<input type="text" class="form-control" placeholder="password" id="password" name="password" >
+				</div>
+				<div class="col-md-4 hide">should contain number and
+					characters</div>
+			</div>
+			<div class="row form-group">
+				<div class="col-md-1 col-md-offset-4">
+					<label class="pull-right">role</label>
+				</div>
+				<div class="col-md-2">
+					<input type="text" class="form-control" placeholder="role" id="role" name="role">
+				</div>
+				<div class="col-md-4 hide" >enter ROLE_USER OR ROLE_ADMIN</div>
+			</div>
+			<div class="row">
+				<div class="col-md-1 col-md-offset-4"></div>
+				<div class="col-md-2">
+					<button class="btn btn-primary" id="submitUserForm">submit</button>
+					<button class="btn">cancel</button>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</body>
+<!-- 所有 Bootstrap 插件都依赖 jQuery，因此jQuery必须在Bootstrap之前引入 -->
+<script src="../resources/js/jquery-2.1.1.min.js"></script>
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="../resources/js/bootstrap-3.2/js/bootstrap.min.js"></script>
+<script src="../resources/js/jquery.form.js"></script>
+<script src="../resources/js/user/user.js"></script>
+</html>
